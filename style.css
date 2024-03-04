@@ -100,7 +100,12 @@ div {
 }
 
 #inputs {
-    width: 60%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    width: 70%;
+    background-color: #ffa959b3;
+    margin: 1em;
 }
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -165,25 +170,37 @@ div {
 }
 
 .inputareatwo {
-    position:absolute;
-    top: 15%;
-    left: 75%;
+    display: flex;
+    flex-flow: column;
     font-size: larger;
+    width:50%;
+    
 }
 
 .inputarea {
-    position:absolute;
-    top: 15%;
-    left: 48.5%;
+    display: flex;
+    flex-flow: column;
     font-size: larger;
+    width: 50%;
 }
 
 .result {
-    font-size: large;
-    position:absolute;
-    top: 85%;
-    left: 48.5%;
+    font-size: 5em;
 }
+.calc {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width:35%;
+    margin: .8em 0 .8em 0;
+}
+.inputcalcs{
+    display:flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
 /*
 
 gl
