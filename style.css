@@ -8,6 +8,7 @@ div {
 * {
     margin: 0;
     box-sizing: border-box;
+   
 }
 
 #header {
@@ -185,7 +186,11 @@ div {
 }
 
 .result {
+    
     font-size: 5em;
+    
+    
+    
 }
 .calc {
     display: flex;
@@ -198,8 +203,11 @@ div {
     display:flex;
     flex-flow: row wrap;
     width: 100%;
-    justify-content: space-around;
+    border-bottom: black 1px;
+
 }
+
+
 
 /*
 
