@@ -43,7 +43,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     width: 40%;
-    border-bottom: 5px solid black;
+    
 }
 
 #visuals img {
@@ -55,6 +55,12 @@ body {
     box-sizing: content-box;
     height: 50px;
     justify-content: center;
+}
+
+
+.border {
+    border-bottom: 5px solid black;
+    align-items: center;
 }
 #prof>h2{
     font-size: 45px;
