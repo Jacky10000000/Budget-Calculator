@@ -1,14 +1,17 @@
 div {
-    background-color: red;
-    color: red;
     width: 35px; 
     height: 35px;
+    border-radius: 50%;
 }
 
 * {
     margin: 0;
     box-sizing: border-box;
    
+}
+
+body {
+    background-color: #FFEBCD;
 }
 
 #header {
@@ -32,7 +35,6 @@ div {
 
 #container {
     display: flex;
-    background-color: #FFEBCD;
 }
 
 #visuals {
@@ -41,6 +43,7 @@ div {
     justify-content: flex-start;
     align-items: center;
     width: 40%;
+    border-bottom: 5px solid black;
 }
 
 #visuals img {
@@ -107,67 +110,68 @@ div {
     width: 70%;
     background-color: #ffa959b3;
     margin: 1em;
+    padding: 2em;
 }
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 #c0{
     background-color:#C3C2FF;
-        border: 1px black solid;
+        border: 2px black solid;
 }
 #c1{
     background-color:#ABC3FF;
-        border: 1px black solid;
+        border: 2px black solid;
 }
 #c2{
     background-color:#BDFF68;
-        border: 1px black solid;
+        border: 2px black solid;
 }#c3{
     background-color:#FFFBA5;
-        border: 1px black solid;
+        border: 2px black solid;
 }#c4{
     background-color:#9FFFC5;
-        border: 1px black solid;
+        border: 2px black solid;
 }#c5{
     background-color:#FFB7F3;
-        border: 1px black solid;
+        border: 2px black solid;
 }#c6{
     background-color:#FFB11A;
-        border: 1px black solid;
+        border: 2px black solid;
 }#c7{
     background-color:#FF7F7F;
-        border: 1px black solid;
+        border: 2px black solid;
 }#c8{
     background-color:white;
-    border: 1px black solid;
+    border: 2px black solid;
 }#c9{
     background-color:black;
-    border: 1px white solid;
+    border: 2px white solid;
 }#c10{
     background-color:#911111;
-    border: 1px white solid;
+    border: 2px white solid;
 }#c11{
     background-color:#B1421F;
-    border: 1px white solid;
+    border: 2px white solid;
 }#c12{
     background-color:#171C8B;
-    border: 1px white solid;
+    border: 2px white solid;
 }
 /* Finish colors and bottom text of 9999 */
 #c13{
     background-color:#0E730C;
-    border: 1px white solid;
+    border: 2px white solid;
 }#c14{
     background-color:#267090;
-    border: 1px white solid;
+    border: 2px white solid;
 }#c15{
     background-color:#057E86;
-    border: 1px white solid;
+    border: 2px white solid;
 }#c16{
     background-color:#8C3952;
-    border: 1px white solid;
+    border: 2px white solid;
 }#c17{
     background-color:#7A1111;
-    border: 1px white solid;
+    border: 2px white solid;
 }
 
 .inputareatwo {
@@ -175,6 +179,7 @@ div {
     flex-flow: column;
     font-size: larger;
     width:50%;
+    border-bottom: 5px solid black;
     
 }
 
@@ -183,29 +188,40 @@ div {
     flex-flow: column;
     font-size: larger;
     width: 50%;
+    border-bottom: 5px solid black
 }
 
 .result {
-    
     font-size: 5em;
-    
-    
-    
 }
 .calc {
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-between;
     width:35%;
-    margin: .8em 0 .8em 0;
+    margin: .8em 0 .8em 0
 }
 .inputcalcs{
     display:flex;
     flex-flow: row wrap;
     width: 100%;
-    border-bottom: black 1px;
+    border-bottom: black 1px
 
 }
+
+button {
+    width: 35px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid black;
+    border-radius: 8px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+button:hover {
+    background-color: rgba(120, 120, 120, 0.249)
+}
+
 
 
 
@@ -214,3 +230,4 @@ div {
 gl
 
 */
+/* SC
