@@ -6,7 +6,6 @@ div {
 
 * {
     margin: 0;
-    box-sizing: border-box;
    
 }
 
@@ -23,9 +22,14 @@ body {
     justify-content: center;
     align-items: center;
     gap: 5vw;
-    color: black;
-    text-shadow: 0 0 12px white;
+    color: rgb(255, 247, 137);
+    text-shadow: 3.5px 2px rgb(0, 0, 0);
     font-size: 2rem;
+    border-bottom: white solid 5px;
+    border-top: white solid 5px;
+    border-left: white solid 5px;
+    border-right: white solid 5px;
+
 }
 
 #header > img {
@@ -59,10 +63,7 @@ body {
 }
 
 
-.border img {
-    border-bottom: 5px solid black;
-    align-items: end;
-}
+
 #prof>h2{
     font-size: 45px;
 }
@@ -86,6 +87,9 @@ body {
     display: flex;
     box-sizing: content-box;
     justify-content: space-around;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    border-bottom: black solid 5px;
 }
 
 #profhead{
