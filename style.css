@@ -23,8 +23,8 @@ body {
     justify-content: center;
     align-items: center;
     gap: 5vw;
-
-    color: white;
+    color: black;
+    text-shadow: 0 0 12px white;
     font-size: 2rem;
 }
 
@@ -43,7 +43,8 @@ body {
     justify-content: flex-start;
     align-items: center;
     width: 40%;
-    
+    border-right: black solid 5px;
+    margin: 1em;
 }
 
 #visuals img {
@@ -58,9 +59,9 @@ body {
 }
 
 
-.border {
+.border img {
     border-bottom: 5px solid black;
-    align-items: center;
+    align-items: end;
 }
 #prof>h2{
     font-size: 45px;
