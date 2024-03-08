@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator of the Average Joe</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -16,11 +17,40 @@
 
     <section id="container">
         <section id="visuals">
-            <section id="prof">
-                <img src="https://i.pinimg.com/736x/e5/66/c6/e566c6b2a9a3ecae104e362c46c5fbab.jpg" alt="">
-                <h2>Profits</h2>
-            </section>
-            <img src="https://freepngtransparent.com/wp-content/uploads/2023/03/circle-png-110.png" alt="">
+             <section id="prof">
+            <img src="https://i.pinimg.com/736x/e5/66/c6/e566c6b2a9a3ecae104e362c46c5fbab.jpg" alt="">
+            <h2>Profits</h2>
+             </section>
+            <canvas  id="profChart" style="width:100%; max-width:600px"></canvas>
+            <script>
+                const xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+                const yValues = [55, 49, 44, 24, 15];
+                const barColors = [
+                  "#b91d47",
+                  "#00aba9",
+                  "#2b5797",
+                  "#e8c3b9",
+                  "#1e7145"
+                ];
+                
+                new Chart("myChart", {
+                  type: "pie",
+                  data: {
+                    labels: xValues,
+                    datasets: [{
+                      backgroundColor: barColors,
+                      data: yValues
+                    }]
+                  },
+                  options: {
+                    title: {
+                      display: true,
+                      text: "World Wide Wine Production 2018"
+                    }
+                  }
+                });
+                </script>
+
             <section id="expen">
                 <img src="https://www.vhv.rs/dpng/f/142-1422379_red-arrow-clip-art-red-right-down-arrow.png" alt="">
                 <h2>Expedentures</h2>
@@ -123,7 +153,6 @@
             </section>
         </section>
     </section>
-    <script src="script.js"></script>
 </body>
 
 </html>
