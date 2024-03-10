@@ -7,6 +7,7 @@
     <title>Calculator of the Average Joe</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -17,46 +18,90 @@
 
     <section id="container">
         <section id="visuals">
-             <section id="prof">
-            <img src="https://i.pinimg.com/736x/e5/66/c6/e566c6b2a9a3ecae104e362c46c5fbab.jpg" alt="">
-            <h2>Profits</h2>
-             </section>
-            <canvas  id="profChart" style="width:100%; max-width:600px"></canvas>
+            <section id="prof">
+                <img src="https://i.pinimg.com/736x/e5/66/c6/e566c6b2a9a3ecae104e362c46c5fbab.jpg" alt="">
+                <h2>Profits</h2>
+            </section>
+            <canvas id="profChart" style="width:100%; max-width:450px"></canvas>
             <script>
-                const xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
-                const yValues = [55, 49, 44, 24, 15];
-                const barColors = [
-                  "#b91d47",
-                  "#00aba9",
-                  "#2b5797",
-                  "#e8c3b9",
-                  "#1e7145"
+                document.addEventListener("DOMContentLoaded", function() {
+
+                const xValues = ["Extortion", "Burglarly", "Exports", "Legal Income", "Debt Collection", "Protection Income", "Contracts/Grants", "Import Tariff", "Other"];
+                const yValues = [22, 22, 22, 1, 1, 1, 1, 1, 3];
+                const pieColors = [
+                    "#C3C2FF",
+                    "#ABC3FF",
+                    "#BDFF68",
+                    "#FFFBA5",
+                    "#9FFFC5",
+                    "#FFB7F3",
+                    "#FFB11A",
+                    "#FF7F7F",
+                    "#FFFFFF"
                 ];
-                
-                new Chart("myChart", {
-                  type: "pie",
-                  data: {
-                    labels: xValues,
-                    datasets: [{
-                      backgroundColor: barColors,
-                      data: yValues
-                    }]
-                  },
-                  options: {
-                    title: {
-                      display: true,
-                      text: "World Wide Wine Production 2018"
+
+                new Chart("profChart", {
+                    type: "pie",
+                    data: {
+                        labels: xValues,
+                        datasets: [{
+                            data: yValues,
+                            backgroundColor: pieColors
+                        }]
+                    },
+                    options: {
+                        title: {
+                            display: true,
+                            text: "Profits"
+                        }
                     }
-                  }
                 });
-                </script>
+            });
+            </script>
 
             <section id="expen">
                 <img src="https://www.vhv.rs/dpng/f/142-1422379_red-arrow-clip-art-red-right-down-arrow.png" alt="">
                 <h2>Expedentures</h2>
             </section>
-            
-            <img src="https://freepngtransparent.com/wp-content/uploads/2023/03/circle-png-110.png" alt="">
+            <canvas id="expenChart" style="width:100%; max-width:450px"></canvas>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+
+                const xValues = ["Tax Men", "Weaponry", "Tools", "Vehicles", "Crew Wages", "Protection Fee", "Medical Service", "Legal Coveragef", "Community Service"];
+                const yValues = [22, 22, 22, 1, 1, 1, 1, 1, 3];
+                const pieColors = [
+                    "#000000",
+                    "#911111",
+                    "#B1421F",
+                    "#171C8B",
+                    "#0E730C",
+                    "#267090",
+                    "#8C3952",
+                    "#057E86",
+                    "#7A1111"
+                ];
+
+                new Chart("expenChart", {
+                    type: "pie",
+                    data: {
+                        labels: xValues,
+                        datasets: [{
+                            data: yValues,
+                            backgroundColor: pieColors
+                        }]
+                    },
+                    options: {
+                        title: {
+                            display: true,
+                            text: "Expedentures"
+                        }
+                    }
+                });
+            });
+            </script>
+
+
         </section>
         <section id="inputs">
             <section id="inputhead">
@@ -69,7 +114,7 @@
                     <h3>Expedentures</h3>
                 </section>
             </section>
-                <section class="inputcalcs">
+            <section class="inputcalcs">
                 <section class="inputarea">
                     <section class="calc">
                         <div id="c0"></div>
@@ -147,7 +192,7 @@
                     </section>
                 </section>
             </section>
-            
+
             <section class="result">
                 <h1>$99,999,999.99</h1>
             </section>
