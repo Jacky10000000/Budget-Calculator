@@ -231,9 +231,18 @@ button {
     font-size: x-large;
 }
 
+.calcBut {
+    width: 150px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid black;
+    border-radius: 8px;
+}
+
 button:hover {
     background-color: rgba(120, 120, 120, 0.249)
 }
+
 
 
 
