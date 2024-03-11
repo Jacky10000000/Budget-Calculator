@@ -22,7 +22,7 @@
                 <img src="https://i.pinimg.com/736x/e5/66/c6/e566c6b2a9a3ecae104e362c46c5fbab.jpg" alt="">
                 <h2>Profits</h2>
             </section>
-            <section id="profChartContainer">
+            <section id="profChartContainer"  style="position: relative; height:42vh; width:24vw">
             <canvas id="profChart" style="width:100%; max-width:450px"></canvas>
         </section>
             <script>
@@ -65,7 +65,7 @@
                 <img src="https://www.vhv.rs/dpng/f/142-1422379_red-arrow-clip-art-red-right-down-arrow.png" alt="">
                 <h2>Expedentures</h2>
             </section>
-            <section id="expenChartContainer">
+            <section id="expenChartContainer"   style="position: relative; height:42vh; width:24vw">
             <canvas id="expenChart" style="width:100%; max-width:450px"></canvas>
             </section>
             <script>
@@ -116,89 +116,89 @@
                     <img src="https://www.vhv.rs/dpng/f/142-1422379_red-arrow-clip-art-red-right-down-arrow.png" alt="">
                     <h3>Expedentures</h3>
                 </section>
-                <button class="calcBut" id="calculateButton">Calculate</button>
+                <button class="calcBut" id="calculateButton" onclick="myFunction()">Calculate</button>
             </section>
             <section class="inputcalcs">
                 <section class="inputarea">
                     <section class="calc">
                         <div id="c0"></div>
-                        <p>Extortion</p><button>+</button>
+                        <p>Extortion</p><input type="range" id="myRange" value="$0">
                     </section>
                     <section class="calc">
                         <div id="c1"></div>
-                        <p>Burglary</p><button>+</button>
+                        <p>Burglary</p><input type="range" id="myRange" value="$0">
                     </section>
                     <section class="calc">
                         <div id="c2"></div>
-                        <p>Exports</p><button>+</button>
+                        <p>Exports</p><input type="range" id="myRange" value="$0">
                     </section>
                     <section class="calc">
                         <div id="c3"></div>
-                        <p>Legal income</p><button>+</button>
+                        <p>Legal income</p><input type="range" id="myRange" value="$0">
                     </section>
                     <section class="calc">
                         <div id="c4"></div>
-                        <p>Debt Collection</p><button>+</button>
+                        <p>Debt Collection</p><input type="range" id="myRange" value="$0">
                     </section>
                     <section class="calc">
                         <div id="c5"></div>
-                        <p>Protection Income</p><button>+</button>
+                        <p>Protection Income</p><input type="range" id="myRange" value="$0">
                     </section>
                     <section class="calc">
                         <div id="c6"></div>
-                        <p>Contracts/Grants</p><button>+</button>
+                        <p>Contracts/Grants</p><input type="range" id="myRange" value="$0">
                     </section>
                     <section class="calc">
                         <div id="c7"></div>
-                        <p>Import tariff</p><button>+</button>
+                        <p>Import tariff</p><input type="range" id="myRange" value="$0">
                     </section>
                     <section class="calc">
                         <div id="c8"></div>
-                        <p>Other</p><button>+</button>
+                        <p>Other</p><input type="range" id="myRange" value="$0">
                     </section>
                 </section>
                 <section class="inputareatwo">
                     <section class="calc">
                         <div id="c9"></div>
-                        <p>Tax Men</p><button>+</button>
+                        <p>Tax Men</p><input type="range" id="myRange" value="$0">
                     </section>
                     <section class="calc">
                         <div id="c10"></div>
-                        <p>Weaponry</p><button>+</button>
+                        <p>Weaponry</p><input type="range" id="myRange" value="$0">
                     </section>
                     <section class="calc">
                         <div id="c11"></div>
-                        <p>Tools</p><button>+</button>
+                        <p>Tools</p><input type="range" id="myRange" value="$0">
                     </section>
                     <section class="calc">
                         <div id="c12"></div>
-                        <p>Vehicles</p><button>+</button>
+                        <p>Vehicles</p><input type="range" id="myRange" value="$0">
                     </section>
                     <section class="calc">
                         <div id="c13"></div>
-                        <p>Crew Wages</p><button>+</button>
+                        <p>Crew Wages</p><input type="range" id="myRange" value="$0">
                     </section>
                     <section class="calc">
                         <div id="c14"></div>
-                        <p>Protection Fee</p><button>+</button>
+                        <p>Protection Fee</p><input type="range" id="myRange" value="$0">
                     </section>
                     <section class="calc">
                         <div id="c15"></div>
-                        <p>Medical Service</p><button>+</button>
+                        <p>Medical Service</p><input type="range" id="myRange" value="$0">
                     </section>
                     <section class="calc">
                         <div id="c16"></div>
-                        <p>Legal Coverage</p><button>+</button>
+                        <p>Legal Coverage</p><input type="range" id="myRange" value="$0">
                     </section>
                     <section class="calc">
                         <div id="c17"></div>
-                        <p>Community Service</p><button>+</button>
+                        <p>Community Service</p><input type="range" id="myRange" value="$0">
                     </section>
                 </section>
             </section>
 
             <section class="result">
-                <h1>$99,999,999.99</h1>
+                <h1 id="demo">$0</h1>
             </section>
         </section>
     </section>
