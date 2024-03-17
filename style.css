@@ -251,3 +251,54 @@ button:hover {
                     MOBILE VERSION
 ----------------------------------------------------------- */
 
+@media only screen and (max-width: 600px) {
+    /* Button Styles */
+    button, .calcBut {
+        width: 80%;
+        height: 50px;
+        font-size: 1.2rem;
+        padding: 10px; 
+        margin: 5px auto; 
+    }
+
+    /* Responsive Font Sizes */
+    .result {
+        font-size: 1.5em; 
+    }
+
+    /* Flexible Layout */
+    .inputarea, .inputareatwo {
+        width: 90%;
+        margin: 0.5em auto; /* Center the input areas */
+    }
+
+    .calc {
+        width: 90%;
+        margin: 0 auto; 
+    }
+
+    .inputcalcs {
+        flex-direction: column;
+    }
+
+    /* Ensure proper sizing for Pie Charts */
+    #profChart canvas, #expenChart canvas {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adjust Header */
+    #header {
+        padding: 20px;
+        width: 100%;
+        text-align: center; 
+    }
+
+    /* Optimize Images */
+    #visuals img {
+        max-width: 100%;
+        height: auto;
+        display: block; 
+        margin: 0 auto; 
+    }
+}

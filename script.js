@@ -42,24 +42,24 @@ document.addEventListener("DOMContentLoaded", function () {
         expenChart.data.datasets[0].data = expenYValues;
         expenChart.update();
 
-        // Calculate total profits and expenditures
+
         const totalProfits = profYValues.reduce((acc, val) => acc + val, 0);
         const totalExpenditures = expenYValues.reduce((acc, val) => acc + val, 0);
 
-        // Calculate budget (profits - expenditures)
+
         const budget = totalProfits - totalExpenditures;
 
-        // Display the budget
+
         const budgetDisplay = document.getElementById("demo");
         budgetDisplay.textContent = "$" + budget.toFixed(2);
 
-        // Change font color based on the budget
+
         budgetDisplay.style.color = budget < 0 ? "#730c0c" : "#0E730C";
 
-        // Get the message container
+
         const messageContainer = document.getElementById("message");
 
-        // Add a congratulatory or roasting message
+
         if (budget > 0) {
             // Congratulate the user
             messageContainer.textContent = "Your making Some Good Cashflow, Keep Up Your Schemes.";
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Expenditures chart initialization
+
     const expenChart = new Chart("expenChart", {
         type: "pie",
         data: {
@@ -111,17 +111,17 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Range input change event
+
     document.querySelectorAll('.calc input[type="range"]').forEach(function (input, index) {
         input.addEventListener('input', function () {
-            // Update profits and expenditures arrays based on input values
+
             if (index < 9) {
                 profYValues[index] = parseInt(input.value) || 0;
             } else {
                 expenYValues[index - 9] = parseInt(input.value) || 0;
             }
 
-            // Call the update function
+
             updateChartsAndBudget();
         });
     });
